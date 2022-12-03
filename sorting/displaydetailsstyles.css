@@ -1,0 +1,34 @@
+.outerdiv
+{
+    background-color: aquamarine;
+    padding-left: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+.inputcity{
+    margin-left: 6.5%;
+    margin-bottom: 5%;
+}
+
+.inputname{
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+
+h2{
+    margin-left: 16%;
+}
+
+.savebutton 
+{
+    margin-left: 25%;
+}
+
+.displaybutton
+{
+    margin-left: 21%;
+}

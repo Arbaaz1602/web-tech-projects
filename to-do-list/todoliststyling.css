@@ -1,0 +1,17 @@
+.outerdivclass {
+  background-color: tomato;
+  margin-left: 27%;
+  margin-right: 27%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-top: 0%;
+  padding-bottom: 25%;
+}
+
+.header {
+  margin-left: 35%;
+}
+
+.inputdiv {
+  margin-left: 25%;
+}

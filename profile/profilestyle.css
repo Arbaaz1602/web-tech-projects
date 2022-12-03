@@ -1,0 +1,26 @@
+.heading{
+    
+    margin-left: 43%;
+}
+fieldset{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: tomato;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin-left: 20%;
+}
+.footername
+{
+    margin-left: 70%;
+}
+.mypic
+{
+    width: 200px ;
+    height: 250px;
+    margin-left: 75%;
+    margin-top: 0;
+}

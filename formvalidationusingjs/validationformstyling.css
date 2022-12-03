@@ -1,0 +1,39 @@
+.outerdiv {
+  background-color: aquamarine;
+  padding-left: 200px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.inputelements {
+  padding-bottom: 1%;
+}
+.firstname {
+  margin-left: 10%;
+}
+.lastname {
+  margin-left: 10%;
+}
+
+.mailclass {
+  margin-left: 6%;
+}
+
+.cmailclass {
+  margin-left: 3%;
+}
+
+.pwdclass {
+  margin-left: 5%;
+}
+
+.cpwdclass {
+  margin-left: 13%;
+}
+.Submitbutton {
+  margin-left: 30%;
+  width: 200;
+  height: 200;
+  background-color: tomato;
+}

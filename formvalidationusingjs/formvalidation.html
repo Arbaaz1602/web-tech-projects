@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="validationformstyling.css" />
+    <script src="validateform.js"></script>
+    <title>form for validation</title>
+  </head>
+  <body>
+    <div class="outerdiv">
+      <h2>Sign-Up Form</h2>
+      <div class="inputelements">
+        First Name:
+        <input type="text" required placeholder="First Name" id="fname" class="firstname" />
+        <button onclick="validatefirstname()">Commit</button>
+      </div>
+      <br />
+      <div class="inputelements">
+        Last Name:
+        <input type="text" required placeholder="Last Name" id="lname" class="lastname"/>
+        <button onclick="validatelastname()">Commit</button>
+      </div>
+      <br />
+      <div class="inputelements">
+        Email Address:
+        <input type="email" required placeholder="Enter mail" id="mail" class="mailclass" />
+        <button onclick="validatemail()">Commit</button>
+      </div>
+      <br />
+      <div class="inputelements">
+        <p>We will authenticate your mail by sending you a confirmation mail</p>
+      </div>
+      <div class="inputelements">
+        Confirm Email Id:
+        <input type="email" required placeholder="Confirm Mail" id="cmail" class="cmailclass"/>
+        <button onclick="confirmmail()">Commit</button>
+      </div>
+      <br />
+      <div class="inputelements">
+        Enter Password:
+        <input type="password" required onkeyup="validatestrngth()" id="pwd" class="pwdclass"/>
+        <button onclick="confirmpassword()">Commit</button>
+        <span id="pwdspan">No Strength</span>
+      </div>
+
+      <br />
+      <div class="inputelements">
+        Confirm: <input type="password" required id="cpwd" class="cpwdclass" />
+        <button onclick="validatepassword()">Commit</button>
+      </div>
+
+      <br />
+      <div class="inputelements">
+        I am a Developer <input type="checkbox" required />
+      </div>
+      <br />
+      <input type="submit" value="submit" class="Submitbutton" onclick="saveinput()">
+    </div>
+  </body>
+</html>

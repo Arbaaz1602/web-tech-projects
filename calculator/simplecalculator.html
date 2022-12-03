@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculatorstyling.css" />
+    <script src="calculatorjs.js"></script>
+    <title>Basic Calculator</title>
+  </head>
+  <body>
+    
+    <div class="outerdiv">
+      <h2>Simple Calculator</h2>
+      
+        Enter Num 1: <input type="number" required placeholder="Enter an Integer" class="inputnumbers" id="num1"/>
+      
+        <br>
+        Enter Num 2: <input type="number" required placeholder="Enter an Integer" class="inputnumbers" id="num2"/>
+
+        <br>
+        <select class="mydropdown" id = "myselectid">
+          <option value="addition">Add</option>
+          <option value="subtraction">Subtract</option>
+          <option value="multiplication">Multiply</option>
+          <option value="Division">Divide</option>
+        </select>
+      <br>
+      <input type="button" value="Fire"s class="mybutton" onclick="operate()">
+      <br>
+        
+      <h3>Result: <span id="myspan">You havent done the operation yet</span></h3>
+
+      </div>
+  </body>
+</html>

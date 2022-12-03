@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="displaydetailsstyles.css" />
+    <script src="displaydetailsuser.js"></script>
+    <title>Basic Calculator</title>
+  </head>
+  <body>
+    
+    <div class="outerdiv">
+      <h2>Display Details</h2>
+      
+        Enter Name <input type="text" required placeholder="Enter name" class="inputname" id="uname"/>
+      
+        <br>
+        Enter City <input type="text" required placeholder="Enter Your city" class="inputcity" id="ucity"/>
+
+        <br>
+        <input type="button" value="Save" class="savebutton" onclick="save()">
+      
+        
+      <h4><span id="myspan1">Details not saved yet</span></h4>
+
+      <br>
+      <input type="button" value="Show Details" class="displaybutton" onclick="display()">
+      <br>
+      <h4><span id="myspan2">Display Details?</span></h4>
+      </div>
+  </body>
+</html>

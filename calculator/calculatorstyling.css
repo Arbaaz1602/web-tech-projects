@@ -1,0 +1,31 @@
+.outerdiv
+{
+    background-color: aquamarine;
+    padding-left: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+.inputnumbers{
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.mydropdown
+{
+    margin-left: 18%;
+    width: 20%;
+}
+
+.mybutton{
+    margin-left: 18%;
+    margin-top: 5%;
+    width: 15%;
+    height: 30%;
+}
+
+h2{
+    margin-left: 16%;
+}
