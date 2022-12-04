@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Score Board</title>
+  </head>
+  <body>
+    <h1>Todays Score</h1>
+
+    <div id="scortemplate"></div>
+
+    <script type="text/javascript">
+      display(); //Calling the function you have to keep this fuction call active otherwise every time changes are made the page refreshes
+      //calling the function after every 5 seconds
+      var x = setInterval(display, 5000);
+      //this will call the display method afterevery 5 seconds
+      function display() {
+        var xtp = new XMLHttpRequest();
+
+        xtp.onreadystatechange = function () {
+          console.log(xtp.readyState);
+          console.log(xtp.status);
+          console.log(typeof(xtp.responseText));
+          if (xtp.readyState == 4 && xtp.status == 200) {
+            document.getElementById("scortemplate").innerHTML =
+              xtp.responseText;
+          }
+        };
+        xtp.open("GET", "livescores.txt", true);
+        xtp.send();
+      }
+    </script>
+  </body>
+</html>
