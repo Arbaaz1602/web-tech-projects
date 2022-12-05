@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select City</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".stateselect").change(function () {
+          
+          cityarraym = ["Mumbai", "Pune"];
+          cityarrayg = ["Ahmadabad", "Gandhinagar"];
+          if ($(".stateselect").val() == "Maharashtra") {
+            $(".cityoption").empty();
+            for (i = 0; i < cityarraym.length; i++) {
+              $(".cityoption").append("<option>" + cityarraym[i] + "</option>");
+            }
+          }
+
+          else if ($(".stateselect").val() == "Gujrat") {
+            $(".cityoption").empty();
+            for (i = 0; i < cityarrayg.length; i++) {
+              $(".cityoption").append("<option>" + cityarrayg[i] + "</option>");
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <label>Select State: </label>
+    <select class="stateselect">
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Gujrat">Gujrat</option>
+    </select>
+    <br />
+    <label>Select City</label>
+    <select class="cityoption"></select>
+  </body>
+</html>
